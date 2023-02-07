@@ -23,7 +23,7 @@ The distributions between the various combinations will then be graphed.
 Sample a random number from a uniform distribution between 0 and 1.
 
 Assign intervals in this range to correspond to a "face" on the die. 
-  
+
 For the even probability case (as in a normal game): (0, 1/6) = '1', (1/6, 2/6) = '2', and so on. 
  
 In the case of a weighted die, the intervals will be adjusted to represent the probability that each face is likely to be landed on.
