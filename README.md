@@ -1,6 +1,6 @@
 # PHSX815_Project1
 
-Project Idea
+**Project Idea**
 
 The goal of this project is to simulate a simplified version of the game of Yahtzee!. 
   
@@ -8,7 +8,7 @@ Yahtzee is a game where you roll 5 die and various combinations give you a diffe
   
 This project will only use two die. 
  
-What the Code will do
+**What the Code will do**
 
 Two 6-sided die will be thrown simultaensouly, and their outcome will be recorded.
 
@@ -18,7 +18,7 @@ Then, this will be repeated with "weighted dice" where one side of a dice is mor
 
 The distributions between the various combinations will then be graphed.
  
-How to implement sampling
+**How to implement sampling**
 
 Sample a random number from a uniform distribution between 0 and 1.
 
