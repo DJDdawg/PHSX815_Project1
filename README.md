@@ -2,15 +2,11 @@
 
 **Project Idea**
 
-The goal of this project is to simulate a simplified version of the game of Yahtzee!. 
-  
-Yahtzee is a game where you roll 5 die and various combinations give you a different amount of points. Normally, 5 die are used. After 13 rounds, the player with the most points wins.
-  
-This project will only use two die. 
+The goal of this project is to simulate a dice roll to see if someone is using a weighted dice.  
  
 **What the Code will do**
 
-Two 6-sided die will be thrown simultaensouly, and their outcome will be recorded.
+A 6-sided die will be thrown simultaensouly, and their outcome will be recorded.
 
 Initially, this will be done with each side of the die being equally likely (1/6 chance).
 
@@ -28,22 +24,37 @@ For the even probability case (as in a normal game): (0, 1/6) = '1', (1/6, 2/6) 
  
 In the case of a weighted die, the intervals will be adjusted to represent the probability that each face is likely to be landed on.
   
-These pairs of dice throws will then be stored in a text file and then graphed. 
-  
-Possible combinations can be represented by a double sum. Sum(i)Sum(j) of (Di, Dj).
+The dice throws will then be stored in a text file and the distribution will be graphed with a histogram. 
 
-Note that (Di, Dj) = (Dj, Di). This means that (1,2) is the same as (2,1).
-    
-All the possible combinations for a two sided die are the following (there are 6^2 possibilities):
 
-(1,1), (1,2), (1,3), (1,4), (1,5), (1,6), 
+**Analysis**
 
-(2,1), (2,2), (2,3), (2,4), (2,5), (2,6), 
+Two Hypothesis Exist.
 
-(3,1), (3,2), (3,3), (3,4), (3,5), (3,6), 
+Ho: All probabilities are equal. p1 = p2 = p3 = p4 = p5 = p6.
 
-(4,1), (4,2), (4,3), (4,4), (4,5), (4,6), 
+H1: Weighted dice. 
 
-(5,1), (5,2), (5,3), (5,4), (5,5), (5,6), 
+Each dice roll in a single experiment is given by a categorical distribution. 
 
-(6,1), (6,2), (6,3), (6,4), (6,5), (6,6)
+Rolling the dice multiple times in one experiment will lead to a multinomial distribution.
+
+Make sure to count each dice roll Ntot and how often each face comes up: N1, N2, N3, N4, N5.
+
+Note that N6 = Ntot - (N1 + N2 + N3 + N4 + N5).
+
+We will calculate the Likelyhood Ratio LR = P(N1, N2, ... | Ho)/P(N1, N2, ... | H1) for each experiment done. 
+
+Then calculate Log Likelyhood Ratio by taking log(LR). 
+
+This will be repeated for many experiments. 
+
+Sore the LLR in ascending order.
+
+Select confidence level. Alpha = (1 - confidence level) / 100
+
+Select LLR entry that corresponds to this Alpha value. For a 95% confidence interval this would mean that for the chosen LLR, 95% of LLR values are beneath the chosen value.
+
+Graph LLR vs hypothesis. 
+
+Now when someone rolls dice on us we will be able to determine if they are cheating us or not. Vengeance to the gambling casinos!
