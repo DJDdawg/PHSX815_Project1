@@ -182,7 +182,9 @@ Picking a confidence level is done by choosing a value $\alpha = \frac{1 - CL}{1
 
 We know comb through our LLR array and choose the entry, $LLR_{\alpha}$, that corresponds to our confidence level. For a 95% confidence interval this would mean that 95% of LLR values are beneath the value $LLR_{\alpha}$.
 
-We then head on over to our counterpart Log likelyhood ratio assumning $H_{1}$ instead of $H_{0}$. Namely, $LLR = \frac{P(x|H_{1})}{P(x|H_{0})} = \sum_{i=1}^{6} N_{i}\log (p_{i}) - N_{tot} \log (p_{0})$. This is also calculated for each experiment and then sorted in ascending order. We then find $LLR_{\alpha}$ in this second array
+We then head on over to our counterpart Log likelyhood ratio assumning $H_{1}$ instead of $H_{0}$. Namely, $LLR_{H_{1}} = \frac{P(x|H_{1})}{P(x|H_{0})} = \sum_{i=1}^{6} N_{i}\log (p_{i}) - N_{tot} \log (p_{0})$. This is also calculated for each experiment and then sorted in ascending order. We then find $LLR_{\alpha}$ in this second array and this defines our $\beta$ value, which is related to the power of our test: $Power = 1 - \beta$.
+
+Our $\alpha$ and $\beta$ value also define our Type 1 and Type 2 errors.
 
 We now Graph LLR vs hypothesis in order to differentiate the two. 
 
