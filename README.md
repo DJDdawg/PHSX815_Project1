@@ -2,7 +2,8 @@
 
 **Project Idea**
 
-The goal of this project is to simulate a dice roll to see if someone is using a weighted dice.  
+The goal of this project is to simulate rolling a dice many times to see if someone is using a weighted dice.  
+
  
 **What the Code will do**
 
