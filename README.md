@@ -162,17 +162,10 @@ Note that $\vec{p}$ is unique to each hypothesis.
 
 The likelyhood ratio (LR) is how to compare the strength of two hypothesis: $LR = \frac{P(x|H_{0})}{P(x|H_{1})}$.
 
-Where "x" is the data obtained, namely $\vec{N}$ under a Hypothesis determined by $\vec_{p}$
+Where "x" is the data obtained, namely $\vec_{N}$ under a Hypothesis determined by $\vec_{p}$
 
-Make sure to count each dice roll Ntot and how often each face comes up: N1, N2, N3, N4, N5.
 
-Note that N6 = Ntot - (N1 + N2 + N3 + N4 + N5).
 
-We will calculate the Likelyhood Ratio LR = P(N1, N2, ... | Ho)/P(N1, N2, ... | H1) for each experiment done. 
-
-Then calculate Log Likelyhood Ratio by taking log(LR). 
-
-This will be repeated for many experiments. 
 
 Sore the LLR in ascending order.
 
