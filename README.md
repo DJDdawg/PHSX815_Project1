@@ -174,7 +174,7 @@ $LLR = \log (LR) = \log (\frac{p_{0}^{N_{tot}}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3
 
 **Confidence Levels and Power of Test**
 
-The above LLR is calculated for each experiment and added to an array {$LLR_{1}, LLR_{2}, ..., LLL_{N_{exp}}$} and is then sorted in ascending order.
+The above LLR is calculated for each experiment and added to an array $LLR_{1}, LLR_{2}, ..., LLL_{N_{exp}}$ and is then sorted in ascending order.
 
 Now we select our confidence level for the experiment:
 
