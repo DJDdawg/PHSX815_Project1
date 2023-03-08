@@ -67,11 +67,9 @@ Where '-Nroll xxx' is the number of dice rolls per experiment and 'Nexp xxx' is 
 
 Hypothesis 1 was run by specifying the weighting of each face of the die:
 
-$ python3 DiceRoll.py -p1 0.3 -p20.1 -p3 0.2 -p4 0.1 -p5 0.1  -Nroll 100 -Nexp 10 -output Dice2.txt
+$ python3 DiceRoll.py -p1 0.3 -p2 0.1 -p3 0.2 -p4 0.1 -p5 0.1  -Nroll 100 -Nexp 10 -output Dice2.txt
 
 The output for both Hypothesis can be seen in **Dice1.txt** and **Dice2.txt**
-
-Make sure that $\sum_{1}^{6} p_{i} = 1$ so that you have a valid categorical distribution.
 
 **Plotting Histograms**
 
@@ -152,14 +150,15 @@ Similarly, the rolling for the alternative hypothesis $H_{1}$ was done and produ
 
 
  
-**Log Likely Hood Ratio and Comparing Hypothesis**
+**Log Likelyhood Ratio and Comparing Hypothesis**
 
+Each individual dice roll is given by a categorical distribution. 
 
-**Analysis**
+Rolling the dice multiple times in one experiment will lead to a multinomial distribution: $P(\vec{N}|\vec{p}) = \frac{N_{tot}!}{N_{1}!...N_{k}!} p_{1}^{N_{1}} ... p_{k}^{N_{k}}$.
 
-Each dice roll in a single experiment is given by a categorical distribution. 
+$\vec{N}$ is a vector, ${N_{1}, N_{2}, ..., N_{k}}$, specifying the counts of how many times each face is rolled. 
 
-Rolling the dice multiple times in one experiment will lead to a multinomial distribution.
+The likelyhood ratio (LR) is how to compare the strength of two hypothesis: $LR = \frac{P(x|H_{0})}{P(x|H_{1})}.
 
 Make sure to count each dice roll Ntot and how often each face comes up: N1, N2, N3, N4, N5.
 
@@ -178,5 +177,10 @@ Select confidence level. Alpha = (1 - confidence level) / 100
 Select LLR entry that corresponds to this Alpha value. For a 95% confidence interval this would mean that for the chosen LLR, 95% of LLR values are beneath the chosen value.
 
 Graph LLR vs hypothesis. 
+
+
+**Analysis**
+
+
 
 Now when someone rolls dice on us we will be able to determine if they are cheating us or not. Vengeance to the gambling casinos.
