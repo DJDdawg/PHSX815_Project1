@@ -17,6 +17,23 @@ In general, the algorithm for a Categorical Distribution function works as follo
 2. Assign intervals in this range to correspond to a probabilities "face" on the die. 
 
 The code that implements the Categorical Distribution for a 6-sided die can be seen in **Random.py**.
+
+    #create function that rolls a dice
+    def Categorical(self, p1, p2, p3, p4, p5):
+      R = self.rand(); #samples a random number R from a uniform distribution between 0 and 1. 
+    	
+      if R < p1:
+        return 1
+      if R < p1 + p2: 
+        return 2
+      if R < p1 + p2 + p3:
+        return 3
+      if R < p1 + p2 + p3 + p4:
+        return 4
+      if R < p1 + p2 + p3 + p4 + p5:
+        return 5
+      else:
+        return 6
  
 **Null Hypothesis $H_{0}$**
 
