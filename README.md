@@ -172,19 +172,16 @@ A more useful metrix that can turn all of this multipliation into addition is th
 
 $LLR = \log (LR) = \log (\frac{p_{0}^{N_{tot}}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3}^{N_{3}} p_{4}^{N_{4}} p_{5}^{N_{5}} p_{6}^{N_{6}}}) = \log (p_{0}^{N_{tot}}) - \log (p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3}^{N_{3}} p_{4}^{N_{4}} p_{5}^{N_{5}} p_{6}^{N_{6}}) = N_{tot} \log (p_{0}) - \sum_{i=1}^{6} N_{i}\log (p_{i})$.
 
+**Confidence Levels and Power of Test**
 
+The above LLR is calculated for each experiment and added to an array {LLR_1, LLR_2, ..., LLL_N_exp} and is then sorted in ascending order.
 
-Sore the LLR in ascending order.
+Now we select our confidence level for the experiment:
 
-Select confidence level. Alpha = (1 - confidence level) / 100
+Picking a confidence level is done by choosing a value $\alpha = (1 - confidence level) / 100$. For this simulation we will choose $\alpha = 0.05$ so that our Confidence Level is 95%. 
 
-Select LLR entry that corresponds to this Alpha value. For a 95% confidence interval this would mean that for the chosen LLR, 95% of LLR values are beneath the chosen value.
+We know comb through our LLR array and choose the entry, $LLR_{\alpha}$, that corresponds to our confidence level. For a 95% confidence interval this would mean that for our chosen LLR, 95% of LLR values are beneath the chosen value.
 
 Graph LLR vs hypothesis. 
-
-
-**Analysis**
-
-
 
 Now when someone rolls dice on us we will be able to determine if they are cheating us or not. Vengeance to the gambling casinos.
