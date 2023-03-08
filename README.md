@@ -150,7 +150,7 @@ Similarly, the rolling for the alternative hypothesis $H_{1}$ was done and produ
 
 
  
-**Log Likelyhood Ratio and Comparing Hypothesis**
+**Log Likelyhood Ratios**
 
 Each individual dice roll is given by a categorical distribution. 
 
@@ -184,8 +184,17 @@ We know comb through our LLR array and choose the entry, $LLR_{\alpha}$, that co
 
 We then head on over to our counterpart Log likelyhood ratio assumning $H_{1}$ instead of $H_{0}$. Namely, $LLR_{H_{1}} = \frac{P(x|H_{1})}{P(x|H_{0})} = \sum_{i=1}^{6} N_{i}\log (p_{i}) - N_{tot} \log (p_{0})$. This is also calculated for each experiment and then sorted in ascending order. We then find $LLR_{\alpha}$ in this second array: thepercent of LLR values below $LLR_{\alpha}$ in the second array defines our $\beta$ value. $\beta$ is related to the power of our test, $Power = 1 - \beta$.
 
-Our $\alpha$ and $\beta$ value also define our Type 1 and Type 2 errors.
+
+**Comparing Hypothesis**
+
+Our $\alpha$ and $\beta$ value define our Type 1 and Type 2 errors.
+
+A type 1 error is a false positive: you reject the null hypothesis $H_{0}$ in favor of the alterantive hypothesis $H_{1}$ when you really shouldn't have.
+
+A type 2 error is a false negative: you fail to reject the null hypothesis $H_{0}$ when you actually should have.
 
 We now Graph LLR vs hypothesis in order to differentiate the two. 
+
+The code **DiceAnalysis.py** will soon calculate the LLR, $\alpha, \beta$, and produce the relevant graphs, but I'm not there yet!
 
 Now when someone rolls dice on us we will be able to determine if they are cheating us or not. Vengeance to the gambling casinos.
