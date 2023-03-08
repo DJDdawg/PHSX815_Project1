@@ -162,8 +162,9 @@ Note that $\vec{p}$ is unique to each hypothesis.
 
 The likelyhood ratio (LR) is how to compare the strength of two hypothesis: $LR = \frac{P(x|H_{0})}{P(x|H_{1})}$.
 
-Where "x" is the data obtained, namely $\vec_{N}$ under a Hypothesis determined by $\vec_{p}$
+Where "x" is the data obtained, namely $\vec{N}$ under a Hypothesis determined by $\vec{p}$
 
+Plugging in the multinomial distribution for the numerator and denominator yields, $LR = \frac{\frac{N_{tot}!}{N_{1}!...N_{k}!} p_{1}^{N_{1}} ... p_{k}^{N_{k}}}{\frac{N_{tot}!}{N_{1}!...N_{k}!} p_{1}^{N_{1}} ... p_{k}^{N_{k}}}$.
 
 
 
