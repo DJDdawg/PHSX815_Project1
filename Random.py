@@ -85,4 +85,3 @@ class Random:
         return 5
       else:
         return 6
-      

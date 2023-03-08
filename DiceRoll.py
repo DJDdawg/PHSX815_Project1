@@ -42,31 +42,31 @@ if __name__ == "__main__":
         seed = sys.argv[p+1]
         
     if '-p1' in sys.argv:
-        p1 = sys.argv.index('-p1')
+        p = sys.argv.index('-p1')
         ptemp = float(sys.argv[p+1])
         if ptemp >= 0 and ptemp <= 1:
             p1 = ptemp
 
     if '-p2' in sys.argv:
-        p2 = sys.argv.index('-p2')
+        p = sys.argv.index('-p2')
         ptemp = float(sys.argv[p+1])
         if ptemp >= 0 and ptemp <= 1:
             p2 = ptemp
 
     if '-p3' in sys.argv:
-        p3 = sys.argv.index('-p3')
+        p = sys.argv.index('-p3')
         ptemp = float(sys.argv[p+1])
         if ptemp >= 0 and ptemp <= 1:
             p3 = ptemp
 
     if '-p4' in sys.argv:
-        p4 = sys.argv.index('-p4')
+        p = sys.argv.index('-p4')
         ptemp = float(sys.argv[p+1])
         if ptemp >= 0 and ptemp <= 1:
             p4 = ptemp
 
     if '-p5' in sys.argv:
-        p5 = sys.argv.index('-p5')
+        p = sys.argv.index('-p5')
         ptemp = float(sys.argv[p+1])
         if ptemp >= 0 and ptemp <= 1:
             p5 = ptemp   
@@ -95,7 +95,7 @@ if __name__ == "__main__":
         outfile = open(OutputFileName, 'w')
         for e in range(0,Nexp):
             for t in range(0,Nroll):
-                outfile.write(str(rng.Categorical(self, p1, p2, p3, p4, p5))+" ")
+                outfile.write(str(random.Categorical(p1, p2, p3, p4, p5))+" ")
             outfile.write(" \n")
         outfile.close()
     else:
