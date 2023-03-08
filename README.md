@@ -164,7 +164,7 @@ The likelyhood ratio (LR) is how to compare the strength of two hypothesis: $LR 
 
 Where "x" is the data obtained, namely $\vec{N}$ under a Hypothesis determined by $\vec{p}$
 
-Plugging in the multinomial distribution for the numerator and denominator yields, $LR = \frac{p_{01}^{N_{1}} p_{02}^{N_{2}} p_{03}^{N_{3}} p_{04}^{N_{4}} p_{05}^{N_{5}} p_{06}^{N_{6}}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3}^{N_{3}} p_{4}^{N_{4}} p_{5}^{N_{5}} p_{6}^{N_{6}}} = \frac{p_{0}^{N_{1} + N_{2} + N_{3} + N_{4} + N_{5} + N_{6}}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3}^{N_{3}} p_{4}^{N_{4}} p_{5}^{N_{5}} p_{6}^{N_{6}}}$
+Plugging in the multinomial distribution for the numerator and denominator yields, $LR = \frac{p_{01}^{N_{1}} p_{02}^{N_{2}} p_{03}^{N_{3}} p_{04}^{N_{4}} p_{05}^{N_{5}} p_{06}^{N_{6}}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3}^{N_{3}} p_{4}^{N_{4}} p_{5}^{N_{5}} p_{6}^{N_{6}}} = \frac{p_{0}^{N_{1} + N_{2} + N_{3} + N_{4} + N_{5} + N_{6}}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3}^{N_{3}} p_{4}^{N_{4}} p_{5}^{N_{5}} p_{6}^{N_{6}}} = \frac{p_{0}^{N}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3}^{N_{3}} p_{4}^{N_{4}} p_{5}^{N_{5}} p_{6}^{N_{6}}}$
 
 
 
