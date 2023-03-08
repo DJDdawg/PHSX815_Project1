@@ -164,7 +164,7 @@ For the Null Hypothesis $H_{0}$, $\vec{p_{0}}$ = {$\frac{1}{6}$, $\frac{1}{6}$, 
 
 And for the Alternative Hypothesis $H_{1}$, $\vec{p_{1}}$ = {0.3, 0.1, 0.3, 0.1, 0.1, 0.1}.
 
-The likelyhood ratio (LR) is how to compare the strength of two hypothesis: $LR = \frac{P(x|H_{0})}{P(x|H_{1})}.
+The likelyhood ratio (LR) is how to compare the strength of two hypothesis: $LR = \frac{P(x|H_{0})}{P(x|H_{1})}$.
 
 Make sure to count each dice roll Ntot and how often each face comes up: N1, N2, N3, N4, N5.
 
