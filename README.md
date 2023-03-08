@@ -7,23 +7,23 @@ The goal of this project is to simulate rolling a dice many times to see if some
  
 **Null Hypothesis $H_{0}$**
 
-The dice is fairly weighted: p1 = p2 = p3 = p4 = p5 = p6 = 1/6.
+The dice is fairly weighted: $p_{1} = p_{2} = p_{3} = p_{4} = p_{5} = p_{6} = \frac{1}{6}$
 
 **Alternative Hypothesis $H_{1}$**
 
 The dice is weighted. 
 
-$p1 = 0.3$
+$p_{1} = 0.3$
 
-$p2 = 0.1$
+$p_{2} = 0.1$
 
-$p3 = 0.3$
+$p_{3} = 0.3$
 
-$p4 = 0.1$
+$p_{4} = 0.1$
 
-$p5 = 0.1$
+$p_{5} = 0.1$
 
-and $p6 = 1 - (p1 + p2 + p3 + p4 + p5) = 0.1$ from normalization.
+and $p_{6} = 1 - (p_{1} + p_{2} + p_{3} + p_{4} + p_{5}) = 0.1$ from normalization.
 
 **Rolling the Die**
 
@@ -41,7 +41,7 @@ $ python3 DiceRoll.py -p1 0.3 -p20.1 -p3 0.2 -p4 0.1 -p5 0.1  -Nroll 100 -Nexp 1
 
 The output for both Hypothesis can be seen in **Dice1.txt** and **Dice2.txt**
 
-Make sure that $\Sum_{1}^{6} = 1$ so that you have a valid categorical distribution.
+Make sure that $\sum_{1}^{6} p_{i} = 1$ so that you have a valid categorical distribution.
 
 **Plotting Histograms**
 
@@ -78,7 +78,7 @@ For the Null Hypothesis it is run with >$ python3 DiceHist.py Dice1.txt and prod
 >Total Probability: 1.0
 
 
-![DiceCount1.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
+![DiceCount1.png](https://github.com/DJDdawg/PHSX815_Project1/blob/main/DiceCount1.png))
 
 
 ![DiceProb1.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
