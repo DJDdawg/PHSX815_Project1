@@ -156,7 +156,13 @@ Each individual dice roll is given by a categorical distribution.
 
 Rolling the dice multiple times in one experiment will lead to a multinomial distribution: $P(\vec{N}|\vec{p}) = \frac{N_{tot}!}{N_{1}!...N_{k}!} p_{1}^{N_{1}} ... p_{k}^{N_{k}}$,
 
-where $\vec{N}$ is a vector, ${N_{1}, N_{2}, ..., N_{k}}$, that specifies the counts of how many times each face is rolled. 
+where $\vec{N}$ is a vector, {$N_{1}, N_{2}, ..., N_{k}$}, that specifies the counts of how many times each face is rolled. 
+
+Note that $\vec{p}$ is unique to each hypothesis. 
+
+For the Null Hypothesis $H_{0}$, $\vec{p} = $ {$\frac{1}{6}, \frac{1}{6}, \frac{1}{6}, \frac{1}{6}, \frac{1}{6}, \frac{1}{6},$}.
+
+And for the Alternative Hypothesis $H_{}$, $\vec{p} = $ {$0.3, 0.1, 0.3, 0.1, 0.1, 0.1$}.
 
 The likelyhood ratio (LR) is how to compare the strength of two hypothesis: $LR = \frac{P(x|H_{0})}{P(x|H_{1})}.
 
