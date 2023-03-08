@@ -81,24 +81,48 @@ For the Null Hypothesis it is run with >$ python3 DiceHist.py Dice1.txt and prod
 ![DiceCount1.png](https://github.com/DJDdawg/PHSX815_Project1/blob/main/DiceCount1.png))
 
 
-![DiceProb1.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
+![DiceProb1.png](https://github.com/DJDdawg/PHSX815_Project1/blob/main/DiceProb1.png)
+
+Similarly, the rolling for the alternative hypothesis $H_{1}$ was done and produced **DiceCount2.png** and **DiceProb2.png**.
+
+>$ python3 DiceHist.py Dice2.txt
+>
+>Count of N1: 293
+>
+>Count of N2: 181
+>
+>Count of N3: 195
+>
+>Count of N4: 84
+>
+>Count of N5: 114
+>
+>Count of N6: 133
+>
+>Total Rolls: 1000
+>
+>Probability of N1: 0.293
+>
+>Probability of N2: 0.181
+>
+>Probability of N3: 0.195
+>
+>Probability of N4: 0.084
+>
+>Probability of N5: 0.114
+>
+>Probability of N6: 0.133
+>
+>Total Probability: 1.0
+
+![DiceCount2.png](https://github.com/DJDdawg/PHSX815_Project1/blob/main/DiceCount2.png)
 
 
-![DiceCount2.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
+![DiceProb2.png](https://github.com/DJDdawg/PHSX815_Project1/blob/main/DiceProb2.png)
 
 
-![DiceProb2.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
-
-, the first one is a count 
-A 6-sided die will be thrown simultaensouly, and their outcome will be recorded.
-
-Initially, this will be done with each side of the die being equally likely (1/6 chance).
-
-Then, this will be repeated with "weighted dice" where one side of a dice is more likely to appear than others. 
-
-The distributions between the various combinations will then be graphed.
  
-**How to implement sampling**
+**Log Likely Hood Ratio and Comparing Hypothesis**
 
 Sample a random number from a uniform distribution between 0 and 1.
 
