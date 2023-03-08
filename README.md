@@ -8,7 +8,7 @@ The goal of this project is to simulate rolling a dice many times to see if some
 
 A Categorical Distribution is a generalization of the Bernoulli Distribution to N possible outcomes. In the case of a standard die, $N = 6$.
 
-The Categorical Distribution has the form of a "pick me" function: $P(X | \vec{p}) = p_{1} p_{2} p_{3} p_{4} p_{5} p_{6}$
+The Categorical Distribution has the form of a "pick me" function: $P(x | \vec{p}) = p_{1}^{x=1} p_{2} ... p_{3} p_{4} p_{5} p_{6}$
 
 Sample a random number from a uniform distribution between 0 and 1.
 
