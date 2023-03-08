@@ -164,7 +164,7 @@ The likelyhood ratio (LR) is how to compare the strength of two hypothesis: $LR 
 
 Where "x" is the data obtained, namely $\vec{N}$ under a Hypothesis determined by $\vec{p}$
 
-Plugging in the multinomial distribution for the numerator and denominator yields, $LR = \frac{\frac{1}{6}^{N_{1} \frac{1}{6}^{N_{1} \frac{1}{6}^{N_{1} \frac{1}{6}^{N_{1} \frac{1}{6}^{N_{1} \frac{1}{6}^{N_{1}}{p_{1}^{N_{1}} ... p_{k}^{N_{k}}}$.
+Plugging in the multinomial distribution for the numerator and denominator yields, $LR = \frac{\frac{1}{6}^{N_{1}}}{p_{1}^{N_{1}} ... p_{k}^{N_{k}}}$.
 
 
 
