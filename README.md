@@ -170,7 +170,7 @@ since the normalization factors cancels, and all of the probabilities in the Nul
 
 A more useful metrix that can turn all of this multipliation into addition is the Log Likelyhood Ratio (LLR), which is defined as the name sounds:
 
-$LLR = \log(LR)= \frac{p_{0}^{N_{tot}}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3}^{N_{3}} p_{4}^{N_{4}} p_{5}^{N_{5}} p_{6}^{N_{6}}}$,
+$LLR = \log_{10} (LR)= \frac{p_{0}^{N_{tot}}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3}^{N_{3}} p_{4}^{N_{4}} p_{5}^{N_{5}} p_{6}^{N_{6}}}$,
 
 
 
