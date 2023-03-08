@@ -4,6 +4,21 @@
 
 The goal of this project is to simulate rolling a dice many times to see if someone is using a weighted dice.  
 
+**Background Knowledge on Categorical Distributions**
+
+A Categorical Distribution is a generalization of the Bernoulli Distribution to N possible outcomes. In the case of a standard die, $N = 6$.
+
+The Categorical Distribution has the form of a "pick me" function: $P(X | \vec{p}) = p_{1} p_{2} p_{3} p_{4} p_{5} p_{6}$
+
+Sample a random number from a uniform distribution between 0 and 1.
+
+Assign intervals in this range to correspond to a "face" on the die. 
+
+For the even probability case (as in a normal game): (0, 1/6) = '1', (1/6, 2/6) = '2', and so on. 
+ 
+In the case of a weighted die, the intervals will be adjusted to represent the probability that each face is likely to be landed on.
+  
+The dice throws will then be stored in a text file and the distribution will be graphed with a histogram. 
  
 **Null Hypothesis $H_{0}$**
 
@@ -123,16 +138,6 @@ Similarly, the rolling for the alternative hypothesis $H_{1}$ was done and produ
 
  
 **Log Likely Hood Ratio and Comparing Hypothesis**
-
-Sample a random number from a uniform distribution between 0 and 1.
-
-Assign intervals in this range to correspond to a "face" on the die. 
-
-For the even probability case (as in a normal game): (0, 1/6) = '1', (1/6, 2/6) = '2', and so on. 
- 
-In the case of a weighted die, the intervals will be adjusted to represent the probability that each face is likely to be landed on.
-  
-The dice throws will then be stored in a text file and the distribution will be graphed with a histogram. 
 
 
 **Analysis**
