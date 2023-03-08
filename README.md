@@ -13,11 +13,17 @@ The dice is fairly weighted: p1 = p2 = p3 = p4 = p5 = p6 = 1/6.
 
 The dice is weighted. 
 
-p1 = 0.3
+$p1 = 0.3$
 
-p2 = 
+$p2 = 0.1$
 
+$p3 = 0.3$
 
+$p4 = 0.1$
+
+$p5 = 0.1$
+
+and $p6 = 1 - (p1 + p2 + p3 + p4 + p5) = 0.1$ from normalization.
 
 **Rolling the Die**
 
@@ -71,6 +77,18 @@ For the Null Hypothesis it is run with >$ python3 DiceHist.py Dice1.txt and prod
 >
 >Total Probability: 1.0
 
+
+![DiceCount1.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
+
+
+![DiceProb1.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
+
+
+![DiceCount2.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
+
+
+![DiceProb2.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
+
 , the first one is a count 
 A 6-sided die will be thrown simultaensouly, and their outcome will be recorded.
 
@@ -117,7 +135,4 @@ Select LLR entry that corresponds to this Alpha value. For a 95% confidence inte
 
 Graph LLR vs hypothesis. 
 
-Now when someone rolls dice on us we will be able to determine if they are cheating us or not. Vengeance to the gambling casinos!
-
-
-![MonteCarloError.png](https://github.com/DJDdawg/PHSX815_Week6/blob/main/MonteCarloError.png)
+Now when someone rolls dice on us we will be able to determine if they are cheating us or not. Vengeance to the gambling casinos.
