@@ -174,13 +174,13 @@ $LLR = \log (LR) = \log (\frac{p_{0}^{N_{tot}}}{p_{1}^{N_{1}} p_{2}^{N_{2}} p_{3
 
 **Confidence Levels and Power of Test**
 
-The above LLR is calculated for each experiment and added to an array $LLR_{1}, LLR_{2}, ..., LLL_{N_{exp}}$ and is then sorted in ascending order.
+The above LLR is calculated for each experiment and added to an array { $LLR_{1}, LLR_{2}, ..., LLL_{N_{exp}}$ } and is then sorted in ascending order.
 
 Now we select our confidence level for the experiment:
 
-Picking a confidence level is done by choosing a value $\alpha = (1 - confidence level) / 100$. For this simulation we will choose $\alpha = 0.05$ so that our Confidence Level is 95%. 
+Picking a confidence level is done by choosing a value $\alpha = \frac{1 - CL}{100}$. For this simulation we will choose $\alpha = 0.05$ so that our Confidence Level is 95%. 
 
-We know comb through our LLR array and choose the entry, $LLR_{\alpha}$, that corresponds to our confidence level. For a 95% confidence interval this would mean that for our chosen LLR, 95% of LLR values are beneath the chosen value.
+We know comb through our LLR array and choose the entry, $LLR_{\alpha}$, that corresponds to our confidence level. For a 95% confidence interval this would 95% of LLR values are beneath the value $LLR_{\alpha}$.
 
 Graph LLR vs hypothesis. 
 
