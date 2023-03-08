@@ -8,17 +8,15 @@ The goal of this project is to simulate rolling a dice many times to see if some
 
 A Categorical Distribution is a generalization of the Bernoulli Distribution to k possible outcomes. In the case of a standard die, $k = 6$.
 
-The Categorical Distribution has the form of a "pick me" function: $P(x | \vec{p}) = p_{1}^{x=1} p_{2}^{x=2} ... p_{k}^{x=k}$, where $\vec{p}$ is the probability of $k - 1$ outcomes, and the probability of $x = i$ is $p_{i}$. The probability of the $k^{th}$ outcome comes from normalization: $\sum_{i=1}^{k} p_{i} = 1$.
+The Categorical Distribution has the form of a "pick me" function: $P(x | \vec{p}) = p_{1}^{x=1} p_{2}^{x=2} ... p_{k}^{x=k}$, where $\vec{p}$ is a vector of the different probabilities of $k - 1$ outcomes, and the probability of $x = i$ is $p_{i}$: hence you "pick out" the probability of the face that you are interested in rolling. The probability of the $k^{th}$ outcome comes from normalization: $\sum_{i=1}^{k} p_{i} = 1$.
 
-Sample a random number from a uniform distribution between 0 and 1.
+In general, the algorithm for a Categorical Distribution function works as follows:
 
-Assign intervals in this range to correspond to a "face" on the die. 
+1. Sample a random number R from a uniform distribution between 0 and 1.
 
-For the even probability case (as in a normal game): (0, 1/6) = '1', (1/6, 2/6) = '2', and so on. 
- 
-In the case of a weighted die, the intervals will be adjusted to represent the probability that each face is likely to be landed on.
-  
-The dice throws will then be stored in a text file and the distribution will be graphed with a histogram. 
+2. Assign intervals in this range to correspond to a probabilities "face" on the die. 
+
+The code that implements the Categorical Distribution for a 6-sided die can be seen in **Random.py**.
  
 **Null Hypothesis $H_{0}$**
 
