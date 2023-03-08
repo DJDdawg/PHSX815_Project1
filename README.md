@@ -160,9 +160,9 @@ where $\vec{N}$ is a vector, {$N_{1}, N_{2}, ..., N_{k}$}, that specifies the co
 
 Note that $\vec{p}$ is unique to each hypothesis. 
 
-For the Null Hypothesis $H_{0}$, $\vec{p_{0}}$ = {$\frac{1}{6}, \frac{1}{6}, \frac{1}{6}, \frac{1}{6}, \frac{1}{6}, \frac{1}{6},$}.
+For the Null Hypothesis $H_{0}$, $\vec{p_{0}}$ = {$\frac{1}{6}$, $\frac{1}{6}$, $\frac{1}{6}$, $\frac{1}{6}$, $\frac{1}{6}$, $\frac{1}{6}$}
 
-And for the Alternative Hypothesis $H_{1}$, $\vec{p_{1}}$ = {$0.3, 0.1, 0.3, 0.1, 0.1, 0.1$}.
+And for the Alternative Hypothesis $H_{1}$, $\vec{p_{1}}$ = {0.3, 0.1, 0.3, 0.1, 0.1, 0.1}.
 
 The likelyhood ratio (LR) is how to compare the strength of two hypothesis: $LR = \frac{P(x|H_{0})}{P(x|H_{1})}.
 
