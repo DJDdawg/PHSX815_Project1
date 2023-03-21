@@ -195,7 +195,7 @@ A type 2 error is a false negative: you fail to reject the null hypothesis $H_{0
 
 We now Graph LLR vs hypothesis in order to differentiate the two. 
 
-The code **DiceAnalysis.py** calculate the LLR for each experiment, the value of $\alpha and \beta$, the power of the test and produce the graph *LLR_Plot.png*. 
+The code **DiceAnalysis.py** calculate the LLR for each experiment, the value of $\alpha$ and $\beta$, the power of the test and produce the graph *LLR_Plot.png*. 
 
 >$ python3 DiceAnalysis.py -input0 Dice1.txt -input1 Dice2.txt
 >
