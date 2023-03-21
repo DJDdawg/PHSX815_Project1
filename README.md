@@ -61,7 +61,7 @@ Dice rolls can be simulated with **DiceRoll.py**.
 
 Hypothesis 0 was run in the following way:
 
-> $ python3 DiceRoll.py -Nroll 100 -Nexp 10 -output Dice1.txt
+> $ python3 DiceRoll.py -Nroll 25 -Nexp 100 -output Dice1.txt
 
 Where '-Nroll xxx' is the number of dice rolls per experiment and 'Nexp xxx' is the number of experiments conducted.
 
@@ -77,31 +77,31 @@ The output for both Hypothesis can be seen in **Dice1.txt** and **Dice2.txt**
 
 For the Null Hypothesis it is run with >$ python3 DiceHist.py Dice1.txt and produced the graphs **DiceCount1.png** and **DiceProb1.png** and the following outputs:
 
->Count of N1: 156
+>Count of N1: 427
 
->Count of N2: 181
+>Count of N2: 434
 >
->Count of N3: 172
+>Count of N3: 399
 >
->Count of N4: 160
+>Count of N4: 401
 >
->Count of N5: 156
+>Count of N5: 419
 >
->Count of N6: 175
+>Count of N6: 420
 >
->Total Rolls: 1000
+>Total Rolls: 2500
 >
->Probability of N1: 0.156
+>Probability of N1: 0.1708
 >
->Probability of N2: 0.181
+>Probability of N2: 0.1736
 >
->Probability of N3: 0.172
+>Probability of N3: 0.1596
 >
->Probability of N4: 0.16
+>Probability of N4: 0.1604
 >
->Probability of N5: 0.156
+>Probability of N5: 0.1676
 >
->Probability of N6: 0.175
+>Probability of N6: 0.168
 >
 >Total Probability: 1.0
 
@@ -115,33 +115,33 @@ Similarly, the rolling for the alternative hypothesis $H_{1}$ was done and produ
 
 >$ python3 DiceHist.py Dice2.txt
 >
->Count of N1: 293
+>Count of N1: 757
 >
->Count of N2: 181
+>Count of N2: 265
 >
->Count of N3: 195
+>Count of N3: 481
 >
->Count of N4: 84
+>Count of N4: 237
 >
->Count of N5: 114
+>Count of N5: 240
 >
->Count of N6: 133
+>Count of N6: 520
 >
->Total Rolls: 1000
+>Total Rolls: 2500
 >
->Probability of N1: 0.293
+>Probability of N1: 0.3028
 >
->Probability of N2: 0.181
+>Probability of N2: 0.106
 >
->Probability of N3: 0.195
+>Probability of N3: 0.1924
 >
->Probability of N4: 0.084
+>Probability of N4: 0.0948
 >
->Probability of N5: 0.114
+>Probability of N5: 0.096
 >
->Probability of N6: 0.133
+>Probability of N6: 0.208
 >
->Total Probability: 1.0
+>Total Probability: 0.9999999999999999
 
 ![DiceCount2.png](https://github.com/DJDdawg/PHSX815_Project1/blob/main/DiceCount2.png)
 
@@ -195,7 +195,7 @@ A type 2 error is a false negative: you fail to reject the null hypothesis $H_{0
 
 We now Graph LLR vs hypothesis in order to differentiate the two. 
 
-The code **DiceAnalysis.py** calculate the LLR for each experiment, the value of $\alpha$ and $\beta$, the power of the test and produce the graph *LLR_Plot.png*. 
+The code **DiceAnalysis.py** calculate the LLR for each experiment, the value of $\alpha$ and $\beta$, the power of the test and produce the graph **LLR_Plot.png**. 
 
 >$ python3 DiceAnalysis.py -input0 Dice1.txt -input1 Dice2.txt
 >
