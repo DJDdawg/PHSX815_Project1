@@ -195,6 +195,8 @@ A type 2 error is a false negative: you fail to reject the null hypothesis $H_{0
 
 We now Graph LLR vs hypothesis in order to differentiate the two. 
 
-The code **DiceAnalysis.py** will soon calculate the LLR, $\alpha, \beta$, and produce the relevant graphs, but I'm not there yet!
+The code **DiceAnalysis.py** calculate the LLR for each experiment, the value of $\alpha and \beta$, the power of the test and produce the graph *LLR_Plot.png*. 
+
+![LLR_Plot.png](https://github.com/DJDdawg/PHSX815_Project1/blob/main/LLR_Plot.png)
 
 Now when someone rolls dice on us we will be able to determine if they are cheating us or not. Vengeance to the gambling casinos.
