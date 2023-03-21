@@ -197,6 +197,20 @@ We now Graph LLR vs hypothesis in order to differentiate the two.
 
 The code **DiceAnalysis.py** calculate the LLR for each experiment, the value of $\alpha and \beta$, the power of the test and produce the graph *LLR_Plot.png*. 
 
+>$ python3 DiceAnalysis.py -input0 Dice1.txt -input1 Dice2.txt
+>
+>Alpha value: 0.05
+>
+>The critical LLR_Alpha is: -1.1579700515665117
+>
+>LLR_Beta: -1.0401870159101279
+>
+>Position of LLR_Beta in LLR_1: 78
+>
+>Beta value: 0.22
+>
+>Power of test is: 0.78
+
 ![LLR_Plot.png](https://github.com/DJDdawg/PHSX815_Project1/blob/main/LLR_Plot.png)
 
 Now when someone rolls dice on us we will be able to determine if they are cheating us or not. Vengeance to the gambling casinos.
