@@ -214,3 +214,5 @@ The code **DiceAnalysis.py** calculate the LLR for each experiment, the value of
 ![LLR_Plot.png](https://github.com/DJDdawg/PHSX815_Project1/blob/main/LLR_Plot.png)
 
 Now when someone rolls dice on us we will be able to determine if they are cheating us or not. Vengeance to the gambling casinos.
+
+The LaTeX report can be seen in the PDF.
